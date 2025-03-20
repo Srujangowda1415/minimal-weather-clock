@@ -1,8 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import Clock from '@/components/Clock';
-import DateDisplay from '@/components/DateDisplay';
-import Weather from '@/components/Weather';
+import { AuroraBackgroundDemo } from '@/components/ui/aurora-demo';
 
 const Index = () => {
   const [mounted, setMounted] = useState(false);
@@ -21,20 +19,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 md:p-10">
-      <div className="w-full max-w-3xl mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-6 md:space-y-10">
-          {/* Time */}
-          <Clock className="mb-4" />
-          
-          {/* Date */}
-          <DateDisplay className="mb-6" />
-          
-          {/* Weather */}
-          <Weather className="w-full" />
-        </div>
-      </div>
-    </div>
+    <AuroraBackgroundDemo />
   );
 };
 
