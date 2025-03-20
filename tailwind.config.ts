@@ -119,6 +119,14 @@ export default {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(360deg)' },
 				},
+				'aurora': {
+					from: { 
+						backgroundPosition: '0% 0%, 0% 0%',
+					},
+					to: { 
+						backgroundPosition: '100% 0%, 100% 100%',
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -130,6 +138,7 @@ export default {
 				'pulse-light': 'pulse-light 1.5s ease-in-out infinite',
 				'ticker': 'ticker 20s ease-in-out infinite',
 				'rotation': 'rotation 1s linear infinite',
+				'aurora': 'aurora 60s linear infinite',
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
