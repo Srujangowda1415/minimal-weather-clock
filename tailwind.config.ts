@@ -115,6 +115,10 @@ export default {
 					'90%': { transform: 'translateY(0)' },
 					'100%': { transform: 'translateY(0)' },
 				},
+				'rotation': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -125,7 +129,11 @@ export default {
 				'slide-down': 'slide-down 0.5s ease-out',
 				'pulse-light': 'pulse-light 1.5s ease-in-out infinite',
 				'ticker': 'ticker 20s ease-in-out infinite',
-			}
+				'rotation': 'rotation 1s linear infinite',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
